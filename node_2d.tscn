@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://da2dtl3u8ivjf"]
+
+[ext_resource type="Shader" path="res://node_2d.gdshader" id="1_bf2kf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j1pfb"]
+shader = ExtResource("1_bf2kf")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+material = SubResource("ShaderMaterial_j1pfb")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
